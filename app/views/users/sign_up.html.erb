@@ -1,0 +1,20 @@
+<h1>Sign up</h1>
+
+<%= form_with model:@user, url: '/users/create_user' do |form|%>
+    <div>
+        <%= form.label :email%>
+        <%= form.text_field :email%>
+    </div>
+
+    <div>
+        <%= form.label :password%>
+        <%= form.password_field :password%>
+    </div>
+
+    <div>
+        <%= form.label :address%>
+        <%= form.password_field :address%>
+    </div>
+    
+     <%= form.submit "Login" %>
+<%end%>
